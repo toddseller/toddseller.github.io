@@ -3,40 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <title>Blog Template</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
-      <div>
-        <a href="index.html"><img src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
-      </div>
-      <nav>
-        <div>
-          <ul>
-            <li><a href="#"></a>Projects</li>
-            <li><a href="#"></a>Resume</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="#">About Me</a></li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+          <a class="navbar-brand center-block" href="index.html"><img class="center-block profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+            <div class="navbar-left">
+              <ul>
+                <li><a href="blog/index.html">Projects</a></li>
+                <li><a href="blog/index.html">Resume</a></li>
+              </ul>
+            </div>
+            <div class="navbar-right">
+              <ul>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="#">About Me</a></li>
+              </ul>
+            </div>
+          </div><!-- end row -->
+        </div><!-- end container -->
       </nav>
     </header>
-    <section>
-      <div>
-        <div>
-          <div>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center hero-text">
             <h1>Blog Title</h1>
+            <h2>A Newbies Guide to Development</h2>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div>
-          <div>
+    <section class="post">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 post-text">
+            <h3>Date</h3>
+            <p>
+              Let's put some highlights on these little trees. The sun wouldn't forget them. We have no limits to our world. We're only limited by our imagination. We don't need any guidelines or formats. All we need to do is just let it flow right out of us. In painting, you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Don't forget to tell these special people in your life just how special they are to you. This is probably the greatest thing to happen in my life - to be able to share this with you.
+            </p>
+            <p>
+              You can create beautiful things - but you have to see them in your mind first. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. I want everbody to be happy. That's what it's all about. Automatically, all of these beautiful, beautiful things will happen.
+            </p>
             <p>
               Let's put some highlights on these little trees. The sun wouldn't forget them. We have no limits to our world. We're only limited by our imagination. We don't need any guidelines or formats. All we need to do is just let it flow right out of us. In painting, you have unlimited power. You have the ability to move mountains. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Don't forget to tell these special people in your life just how special they are to you. This is probably the greatest thing to happen in my life - to be able to share this with you.
             </p>
@@ -44,15 +60,9 @@
               You can create beautiful things - but you have to see them in your mind first. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. I want everbody to be happy. That's what it's all about. Automatically, all of these beautiful, beautiful things will happen.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-    <article>
-      <div>
-        <div>
-          <div>
+          <div class="col-xs-12 col-sm-4 post-links text-right">
             <ul>
-              <li><a href="#">Blog Post 1</a></li>
+              <li class="first-post"><a href="#">Blog Post 1</a></li>
               <li><a href="#">Blog Post 2</a></li>
               <li><a href="#">Blog Post 3</a></li>
               <li><a href="#">Blog Post 4</a></li>
@@ -63,42 +73,33 @@
           </div>
         </div>
       </div>
+    </section>
+    <article>
+        <div class="container-fluid">
+        <div class="row">
+          
+        </div>
+      </div>
     </article>
     <footer>
-      <div>
-        <div>
-          <div>
-            <p>&copy; 2015 Todd Seller</p>
-          </div>
-          <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 icon">
             <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope"> Email Me</a>
-          </div>
-          <div>
+          </div><!-- end icon -->
+          <div class="col-xs-4 copyright text-center">
+            <p>&copy; 2015 Todd Seller</p>
+          </div><!-- end copyright -->
+          <div class="col-xs-push-1 col-xs-4 social">
             <ul>
               <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
               <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
               <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
               <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </div><!-- end social -->
+        </div><!-- end row -->
+      </div><!-- end container -->
     </footer>
   </body>
 </html>
-
-<!--
-  How was it to wireframe and create an HTML page with a pair?
-    Working in a collaborative environment is always good. Working with a peer gives you another perspective or allows you to explore a path you may not have originally seen or even thought of. Although in this particular exercise, it seemed difficult to fully collaborate.
-
-  Did you find wireframing to be helpful to your development process?
-    Yes, because it made it easier to break down the structure of the page.
-
-  What did you and your pair decide made a good wireframe?
-    As far as a wireframing tool, we used OmniGraffle.
-
-  What new semantic elements did you learn about (if any)?
-    Seeing how I currently use HTML in my current job, I really didn't discover anything that I didn't already know.
--->
-
-<a href="https://github.com/toddseller/toddseller.github.io/commit/aecc4e3fc15c3769f74d3b8c2a57f8a6267e2bc6">Blog Wireframe Image</a>
