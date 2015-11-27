@@ -1,33 +1,3 @@
-.hero {
-  height: 300px;
-  background: url('../imgs/macbook.jpg') fixed center center no-repeat;
-  background-attachment: fixed;
-}
-.hero-text {
-  padding-top: 60px;
-  font-size: 1.5em;
-}
-.hero-text h1 {
-  font-size: 2.75em;
-  font-weight: 800;
-}
-.hero-text h2 {
-  font-weight: 800;
-}
-.skills {
-  padding: 50px 0;
-  font-size: 1.25em;
-}
-.skills h3 {
-  font-weight: 800;
-}
-.skills img {
-  width: 160px;
-  height: auto;
-}
-.skills a {
-  margin-top: 10px;
-}
 /*
 ===========================
 Universal Styling
@@ -42,86 +12,184 @@ html {
   text-rendering: optimizelegibility;
 }
 body {
-  margin-top: 120px;
+  margin-top: 124px;
+  max-width: 1440px;
+  margin: 0;
 }
-li {
-  position: relative;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff 50%, #1d1d1d 50%);
+  height: 124px;
+}
+nav ul {
+  padding: 0;
+}
+nav ul li {
   display: inline-block;
 }
-.navbar-inverse {
-  background-color: #ffffff;
-  background-image: linear-gradient(#ffffff 50%,#1d1d1d 50%);
-  height: 120px;
-}
-.navbar li a {
+nav ul li a {
   color: #ffffff;
   font-size: 1.25em;
   font-weight: 400;
   padding: 0 50px;
+  text-decoration: none;
 }
-.navbar li a:hover {
+nav li a:hover {
   text-decoration: none;
   color: #ff002d;
 }
-.navbar-left {
-  padding-top: 76px;
-}
-.navbar-left a:hover{
-  
-}
-.navbar-right {
-  padding-top: 76px;
-  margin-right: 50px;
-}
-.navbar-brand {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 15px;
+.nav-left {
+  width: 46%;
+  height: 62px;
+  margin-top: -62px;
   text-align: center;
-  margin: auto;
+  float: left;
+}
+.nav-right {
+  width: 46%;
+  height: 62px;
+  margin-top: -62px;
+  text-align: center;
+  float: right;
 }
 .profile-pict {
+  position: relative;
+  top: 31px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   width: 120px;
   height: auto;
   border: 2px solid #1d1d1d;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
   border-radius: 60px;
 }
 .profile-pict:hover {
   -webkit-filter: none;
   filter: none;
 }
+.hero {
+  margin-top: 124px;
+  width: 100%;
+  height: 300px;
+  background: url('../imgs/macbook.jpg') fixed center center no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+.hero-text {
+  margin: 0;
+  padding-top: 65px;
+  font-size: 1.25em;
+}
+.hero-text h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  margin: 0;
+}
+.hero-text h2 {
+  margin: 0;
+  font-weight: bold;
+}
+.skills {
+  padding: 50px 0px;
+  font-size: 1.15em;
+  text-align: center;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+.skills h3 {
+  font-weight: 800;
+}
+.skills img {
+  width: 160px;
+  height: auto;
+}
+.skills p {
+  padding-bottom: 25px;
+}
+.col-skills {
+  padding: 0 15px 50px;
+}
+.button {
+  background-color: #ff002d;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #bf0023;
+}
+.button.disabled {
+  opacity: .65;
+}
+a.button.disabled {
+  pointer-events: none;
+}
 footer {
   background-color: #1d1d1d;
   height: 80px;
+  width: 100%;
+}
+.foot {
+  width: 1200px;
+  margin: 0 auto;
 }
 .icon {
   color: #ffffff;
-  padding-top: 30px;
+  text-align: left;
+  margin-top: 30px;
+  padding-right: 30px;
 }
 .icon a {
   color: #ffffff;
   text-decoration: none;
 }
 .icon img {
-  width: 20px;
-  height: auto;
+  height: 22px;
+  width: auto;
+  position: absolute;
 }
 .copyright {
+  margin-top: 15px;
   color: #ffffff;
-  padding-top: 30px;
+  text-align: center;
+  padding: 0 15px;
+}
+.social {
+  margin-top: 5px;
+  text-align: right;
+  float: right;
+}
+.social li {
+  display: inline-block;
 }
 .social img {
-  padding: 20px 5px 0 0;
+  padding-right: 5px;
   width: 40px;
   height: auto;
 }
-.btn-danger {
-  background-color: #ff002d;
-  border: none;
-  padding: 15px 25px; 
+.clearfix {
+  clear: both;
+}
+.col-4 {
+  width: 30.833333%;
+  float: left;
+}
+.col-8 {
+  width: 64.166667%;
+  float: left;
+}
+.col-3 {
+  width: 22.5%;
+  float: left;
 }
