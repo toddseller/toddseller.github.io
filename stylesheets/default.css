@@ -6,8 +6,6 @@ Universal Styling
 html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
@@ -18,8 +16,7 @@ body {
 }
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 nav {
   width: 100%;
