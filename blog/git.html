@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Blog Template</title>
     <!-- load stylesheets -->
-    <link type="text/css" rel="stylesheet" href="../stylesheets/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
     <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
     <!-- load Google fonts -->
@@ -12,97 +11,76 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="row">
-          <a class="navbar-brand center-block" href="../index.html"><img class="center-block profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
-            <div class="navbar-left">
-              <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-              </ul>
-            </div>
-            <div class="navbar-right">
-              <ul>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="#">About Me</a></li>
-              </ul>
-            </div>
-          </div><!-- end row -->
-        </div><!-- end container -->
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center hero-text">
-            <h1>The Importance of Version Control</h1>
-            <h2>A Newbies Guide to Development</h2>
-          </div>
-        </div>
+      <div class="hero-text blog-title">
+        <h1>The Importance of Version Control</h1>
+        <h2>A Newbies Guide to Development</h2>
       </div>
     </section>
     <section class="post">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 post-text">
-            <h3>November 16, 2015</h3>
-            <p>
-              Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
-            </p>
-            <h4>What are the benefits of version control?</h4>
-            <p>
-              Before we can understand the benefits of version control, we must ask ourselves what is version control? Version control is probably something you've already done, without knowing exactly what it was. Imagine you are writing a paper over several hours or days. You probably started with a rough draft and saved it. Later you probably went back through your rough draft and made some changes and started to clean it up. If you saved this new copy as a new file and kept your original version as a backup, this is version control. So why is this important? Why is it best practice to use this in development? Simple, it gives us away to roll-back to an earlier version if there are any problems with our code. Imagine you have a working application and while you are adding a new feature your code breaks! Your whole site crashes and people are standing outside your window with burning torches and pitchforks! Well not really, you are a developer not Dr. Frankenstein; but you get the idea. You know that you need to get your site back up and running ASAP because people are counting on your app. Version control allows you to roll-back to a previous version of your code that you know was working and gets you back up and running! You are a hero! People no longer want to kill you they hoist you up on their shoulders and parade you through town! Well not really, again you are a developer not a superhero. So the benefit of version control is that it gives you a greater amount of control to correct, modify, and track the changes in your code.
-            </p>
-            <h4>How does git help you keep track of changes?</h4>
-            <p>
-              Simple, git is a super magical unicorn from outer space and uses the power of rainbows to keep track of your changes. Actually that's not necessarily true, but it may seem like that. Using git in a project changes the way in which you save your file. Instead of just saving the file and moving on, with git you have multiple stages; and git gives you the tools to check the current status of your file. Once you are done creating or modifying your file you "Add" your file to the staging area. This tells git that you are ready to "Commit" or save the file. Now that you've added your file you tell git that you are ready to commit the changes. When you commit you add a single or multi-line comment to your commit. This tells you or others what was done during the commit. It is a quick and easy way to track the changes, but that's not all. You can actually go back and look at the actual changes that occurred during the commit. You can see a line by line comparison of the file state prior to the commit and the modifications or additions that were made. I told you it was pretty cool, granted not as cool as a super magical unicorn from outer space.
-            </p>
-            <h4>Why use GitHub to store your code?</h4>
-            <p>
-              Git is a powerful tool that helps improve your work flow, however, it only resides on your computer. This is ok if you are working alone, but what do you do if you are working on a team? Enter GitHub! GitHub is an online repository that allows you to store your localized git repository online. This allows for a greater amount of collaboration between you and your team because now you can all work on the same code simultaneously, without fear of overwriting or deleting the work of others on your team. By having the ability to create separate "branches" you can work on a new feature while others work on other features. Then you can merge all the changes back into your "master branch" when you know that everything is working and will not break your existing code. And because of git's powerful tracking capabilities you can easily track all the changes to your code.
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-4 pull-right post-links text-center">
-            <ul>
-              <li class="first-post"><a class="active" href="#">The Importance of<br>Version Control</a></li>
-              <li><a href="#">CSS Concepts</a></li>
-              <li><a href="#">Blog Post 3</a></li>
-              <li><a href="#">Blog Post 4</a></li>
-              <li><a href="#">Blog Post 5</a></li>
-              <li><a href="#">Blog Post 6</a></li>
-              <li><a href="#">Blog Post 7</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-8 post-text">
+        <h3>November 16, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>What are the benefits of version control?</h4>
+        <p>
+          Before we can understand the benefits of version control, we must ask ourselves what is version control? Version control is probably something you've already done, without knowing exactly what it was. Imagine you are writing a paper over several hours or days. You probably started with a rough draft and saved it. Later you probably went back through your rough draft and made some changes and started to clean it up. If you saved this new copy as a new file and kept your original version as a backup, this is version control. So why is this important? Why is it best practice to use this in development? Simple, it gives us away to roll-back to an earlier version if there are any problems with our code. Imagine you have a working application and while you are adding a new feature your code breaks! Your whole site crashes and people are standing outside your window with burning torches and pitchforks! Well not really, you are a developer not Dr. Frankenstein; but you get the idea. You know that you need to get your site back up and running ASAP because people are counting on your app. Version control allows you to roll-back to a previous version of your code that you know was working and gets you back up and running! You are a hero! People no longer want to kill you they hoist you up on their shoulders and parade you through town! Well not really, again you are a developer not a superhero. So the benefit of version control is that it gives you a greater amount of control to correct, modify, and track the changes in your code.
+        </p>
+        <h4>How does git help you keep track of changes?</h4>
+        <p>
+          Simple, git is a super magical unicorn from outer space and uses the power of rainbows to keep track of your changes. Actually that's not necessarily true, but it may seem like that. Using git in a project changes the way in which you save your file. Instead of just saving the file and moving on, with git you have multiple stages; and git gives you the tools to check the current status of your file. Once you are done creating or modifying your file you "Add" your file to the staging area. This tells git that you are ready to "Commit" or save the file. Now that you've added your file you tell git that you are ready to commit the changes. When you commit you add a single or multi-line comment to your commit. This tells you or others what was done during the commit. It is a quick and easy way to track the changes, but that's not all. You can actually go back and look at the actual changes that occurred during the commit. You can see a line by line comparison of the file state prior to the commit and the modifications or additions that were made. I told you it was pretty cool, granted not as cool as a super magical unicorn from outer space.
+        </p>
+        <h4>Why use GitHub to store your code?</h4>
+        <p>
+          Git is a powerful tool that helps improve your work flow, however, it only resides on your computer. This is ok if you are working alone, but what do you do if you are working on a team? Enter GitHub! GitHub is an online repository that allows you to store your localized git repository online. This allows for a greater amount of collaboration between you and your team because now you can all work on the same code simultaneously, without fear of overwriting or deleting the work of others on your team. By having the ability to create separate "branches" you can work on a new feature while others work on other features. Then you can merge all the changes back into your "master branch" when you know that everything is working and will not break your existing code. And because of git's powerful tracking capabilities you can easily track all the changes to your code.
+        </p>
+      </div>
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a class="active" href="#">The Importance of Version Control</a></li>
+          <li><a href="#">CSS Concepts</a></li>
+          <li><a href="#">Blog Post 3</a></li>
+          <li><a href="#">Blog Post 4</a></li>
+          <li><a href="#">Blog Post 5</a></li>
+          <li><a href="#">Blog Post 6</a></li>
+          <li><a href="#">Blog Post 7</a></li>
+        </ul>
       </div>
     </section>
-    <article>
-        <div class="container-fluid">
-        <div class="row">
-          
-        </div>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
       </div>
-    </article>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-4 icon">
-            <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope"> Email Me</a>
-          </div><!-- end icon -->
-          <div class="col-xs-4 copyright text-center">
-            <p>&copy; 2015 Todd Seller</p>
-          </div><!-- end copyright -->
-          <div class="col-xs-push-1 col-xs-4 social">
-            <ul>
-              <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
-              <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
-              <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
-              <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
-            </ul>
-          </div><!-- end social -->
-        </div><!-- end row -->
-      </div><!-- end container -->
     </footer>
   </body>
 </html>

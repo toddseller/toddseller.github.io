@@ -4,95 +4,81 @@
     <meta charset="UTF-8">
     <title>Todd Seller's Portfolio</title>
     <!-- load stylesheets -->
-    <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css">
+    <!-- <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css"> -->
     <link type="text/css" rel="stylesheet" href="stylesheets/default.css">
     <!-- load Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="row">
-          <a class="navbar-brand center-block" href="index.html"><img class="center-block profile-pict" src="imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
-            <div class="navbar-left">
-              <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-              </ul>
-            </div>
-            <div class="navbar-right">
-              <ul>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="#">About Me</a></li>
-              </ul>
-            </div>
-          </div><!-- end row -->
-        </div><!-- end container -->
+      <nav>
+        <a href="index.html"><img class="center profile-pict" src="imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <section class="hero">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 text-center hero-text">
-            <h1>Todd Seller</h1>
-            <h2>Web Developer and Visual Designer</h2>
-            <p>
-              With over 20 years of design and marketing experience, I bring my exacting detail and pixel perfect perfection into every project I work on.
-            </p>
-          </div><!-- end hero-text -->
-        </div><!-- end row -->
-      </div><!-- end container -->
+    <section class="hero clearfix">
+      <div class="hero-text">
+        <h1>Todd Seller</h1>
+        <h2>Web Developer and Visual Designer</h2>
+        <p>
+          With over 20 years of design and marketing experience, I bring my exacting detail and pixel perfect perfection into every project I work on.
+        </p>
+      </div><!-- end hero-text -->
     </section><!-- end hero -->
     <section class="skills">
-      <div class="container clearfix">
-        <div class="row">
-          <div class="col-sm-4 text-center">
-            <img src="imgs/web.svg" alt="Web Development Icon">
-            <h3>Web Development Projects</h3>
-            <p>
-              Whether it is websites or web apps, I've got you covered. Here are some of the recent projects I have worked on.
-            </p>
-            <a class="btn btn-danger" href="#">View Projects</a>
-          </div>
-          <div class="col-sm-4 text-center">
-            <img src="imgs/marketing.svg" alt="Marketing Icon">
-            <h3>Marketing Projects</h3>
-            <p>
-              Print, web, email, and more! My extensive experience in visual design and marketing can be seen here.
-            </p>
-            <a class="btn btn-danger" href="#">View Projects</a>
-          </div>
-          <div class="col-sm-4 text-center">
-            <img src="imgs/video.svg" alt="Video Camera Icon">
-            <h3>Video Projects</h3>
-            <p>
-              From scripting to voice over to final product, I've created it all. Here are a few projects I've worked on recently. 
-            </p>
-            <a class="btn btn-danger" href="#">View Projects</a>
-          </div>
-        </div><!-- end row -->
-      </div><!-- end container -->
+      <div class="col-4 col-skills center">
+        <img src="imgs/web.svg" alt="Web Development Icon">
+        <h3>Web Development Projects</h3>
+        <p>
+          Whether it is websites or web apps, I've got you covered. Here are some of the recent projects I have worked on.
+        </p>
+        <a class="button" href="#">View Projects</a>
+      </div>
+      <div class="col-4 col-skills center">
+        <img src="imgs/marketing.svg" alt="Marketing Icon">
+        <h3>Marketing Projects</h3>
+        <p>
+          Print, web, email, and more! My extensive experience in visual design and marketing can be seen here.
+        </p>
+        <a class="button" href="#">View Projects</a>
+      </div>
+      <div class="col-4 col-skills center">
+        <img src="imgs/video.svg" alt="Video Camera Icon">
+        <h3>Video Projects</h3>
+        <p>
+          From scripting to voice over to final product, I've created it all. Here are a few projects I've worked on recently. 
+        </p>
+        <a class="button" href="#">View Projects</a>
+      </div>
     </section><!-- end skills -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-4 icon">
-            <a href="mailto:me@toddseller.com"><img src="imgs/email.svg" alt="Icon of an envelope"> Email Me</a>
-          </div><!-- end icon -->
-          <div class="col-xs-4 copyright text-center">
-            <p>&copy; 2015 Todd Seller</p>
-          </div><!-- end copyright -->
-          <div class="col-xs-push-1 col-xs-4 social">
-            <ul>
-              <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="imgs/facebook.svg" alt="Facebook icon"></a></li>
-              <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="imgs/twitter.svg" alt="Twitter icon"></a></li>
-              <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
-              <li><a href="https://github.com/toddseller" target="_blank"><img src="imgs/github.svg" alt="GitHub icon"></a></li>
-            </ul>
-          </div><!-- end social -->
-        </div><!-- end row -->
-      </div><!-- end container -->
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
     </footer>
   </body>
 </html>

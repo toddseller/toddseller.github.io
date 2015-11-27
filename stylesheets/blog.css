@@ -5,7 +5,12 @@
   padding-top: 25px;
   font-size: 1.25em;
 }
+.blog-title {
+  padding-top: 40px;
+}
 .post {
+  width: 1200px;
+  margin: 0 auto;
   font-size: 1.1em;
   line-height: 1.25em;
 }
@@ -18,7 +23,8 @@
   font-weight: 700;
 }
 .post-links {
-  width: 360px;
+  float: right;
+  text-align: center;
 }
 .post-links li {
   display: block;
@@ -31,6 +37,7 @@
   font-size: 1.5em;
   font-weight: 800;
   color: #1d1d1d;
+  text-decoration: none;
 }
 .post-links li a:hover {
   text-decoration: none;
@@ -38,7 +45,7 @@
 }
 .post-links li a.active {
   color: #ff002d;
-}
-.row-2 {
-  padding-top: 50px;
+} 
+.single {
+  padding: 15px 0;
 }
