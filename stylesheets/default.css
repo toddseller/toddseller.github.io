@@ -22,6 +22,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
   background-color: #ffffff;
   background-image: linear-gradient(#ffffff 50%, #1d1d1d 50%);
   height: 124px;
@@ -126,10 +127,10 @@ nav li a:hover {
 .button:hover {
   background-color: #bf0023;
 }
-.button.disabled {
+.disabled {
   opacity: .65;
 }
-a.button.disabled {
+.disabled a {
   pointer-events: none;
 }
 footer {
