@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1175.8 367.9" style="enable-background:new 0 0 1175.8 367.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF002D;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:18px;}
+	.st3{fill:#FF002D;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#FF002D;}
+</style>
+<g>
+	<g>
+		<rect x="2.6" class="st0" width="200" height="200"/>
+		<text transform="matrix(1 0 0 1 0 235.9309)"><tspan x="0" y="0" class="st1 st2">.box {</tspan><tspan x="0" y="21.6" class="st1 st2">  width: 200px;</tspan><tspan x="0" y="43.2" class="st1 st2">  height: 200px;</tspan><tspan x="0" y="64.8" class="st1 st2">  border: 1px solid #000000;</tspan><tspan x="0" y="86.4" class="st1 st2">}</tspan></text>
+	</g>
+	<g>
+		<path class="st3" d="M515,200H335c-5.5,0-10-4.5-10-10V10c0-5.5,4.5-10,10-10h180c5.5,0,10,4.5,10,10v180
+			C525,195.5,520.6,200,515,200z"/>
+		<text transform="matrix(1 0 0 1 322.4911 235.9309)"><tspan x="0" y="0" class="st1 st2">.box {</tspan><tspan x="0" y="21.6" class="st1 st2">  width: 200px;</tspan><tspan x="0" y="43.2" class="st1 st2">  height: 200px;</tspan><tspan x="0" y="64.8" class="st1 st2">  border: 1px solid #000000;</tspan><tspan x="0" y="86.4" class="st1 st2">  border-radius: 10px;</tspan><tspan x="0" y="108" class="st1 st2">}</tspan></text>
+	</g>
+	<g>
+		<path class="st0" d="M847.5,200h-150c-27.6,0-50-22.4-50-50V0h150c27.6,0,50,22.4,50,50V200z"/>
+		<text transform="matrix(1 0 0 1 622.311 235.9309)"><tspan x="0" y="0" class="st1 st2">.box {</tspan><tspan x="0" y="21.6" class="st1 st2">  width: 200px;</tspan><tspan x="0" y="43.2" class="st1 st2">  height: 200px;</tspan><tspan x="0" y="64.8" class="st1 st2">  border: 1px solid #000000;</tspan><tspan x="0" y="86.4" class="st1 st2">  border-radius-top-right: 50px;</tspan><tspan x="0" y="108" class="st1 st2">  border-radius-bottom-left: 50px;</tspan><tspan x="0" y="129.6" class="st1 st2">}</tspan></text>
+	</g>
+	<g>
+		<path class="st4" d="M1070,200L1070,200c-55.2,0-100-44.8-100-100v0c0-55.2,44.8-100,100-100h0c55.2,0,100,44.8,100,100v0
+			C1170,155.2,1125.3,200,1070,200z"/>
+		<text transform="matrix(1 0 0 1 967.4739 235.9309)"><tspan x="0" y="0" class="st1 st2">.box {</tspan><tspan x="0" y="21.6" class="st1 st2">  width: 200px;</tspan><tspan x="0" y="43.2" class="st1 st2">  height: 200px;</tspan><tspan x="0" y="64.8" class="st1 st2">  border-radius: 50%;</tspan><tspan x="0" y="86.4" class="st1 st2"> }</tspan></text>
+	</g>
+</g>
+</svg>
