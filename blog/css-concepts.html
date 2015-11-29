@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Concepts</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text blog-title">
+        <h1>CSS Concepts</h1>
+        <h2>A Newbies Guide to Development</h2>
+      </div>
+    </section>
+    <section class="post">
+      <div class="col-8 post-text">
+        <h3>November 28, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>What is the difference between margin, border, and padding?</h4>
+        <p>
+          I can't believe that the holidays are already upon us! It seems like I just put away all the Christmas decorations last week, and now I'm schlepping them back out. Now I understand your confusion. Why is this guy talking about the holidays and Christmas decorations when he is supposed to be talking about margins, borders, and padding?! Well, let me explain in my typical round about way.
+        </p>
+        <p>
+          My wife and son thought that we could start a new tradition this year and get our Christmas tree the day after Thanksgiving. So yesterday we braved the frigid 50&deg; California weather and cut down our Christmas tree, brought it home, and set it up. Now mind you, this was all really done because we have a Bearded Dragon who waits all year for his tree. He climbs up it and sits on the sunlit branches; yes, he has a pretty cush life. Now I want you to imaging that this Christmas tree is a web browser and all the presents underneath are the elements within the web page. Can you see that? Well, this is typically called the "Box Model" when talking about HTML and CSS, were each element is an individual box holding its content. So what exactly did the whole story of the Christmas tree have to do with any of this? Nothing, it was just a fun little way to introduce boxes.
+        </p>
+        <figure>
+          <img src="../imgs/box-model.svg" alt="Image of the box-model">
+          <figcaption>HTML/CSS Box Model</figcaption>
+        </figure>
+        <h4>Margin</h4>
+        <p>
+          You can think of the margin as a force field that surrounds the box that holds our content. Its job is to make sure that the other boxes keep there distance and don't get too close to our box. The margin, however, does not increase the physical dimensions of our element.
+        </p>
+        <h4>Border</h4>
+        <figure>
+          <img src="../imgs/borders.svg" alt="Boxes with different borders applied">
+          <figcaption>Examples of Borders</figcaption>
+        </figure>
+        <p>
+          If we go back to our initial example of the boxes being the presents under our Christmas tree, you can think of the border as the wrapping paper on the box. It wraps our content and is its outer most dimension. It can add decoration or even effect the shape of our box. Unlike the margin, the border does effect the dimensions of our element. So if you had an element with a width of 200px and a height of 200px and you placed a 5px border around the element. The overall dimensions would remain 200px by 200px, but the interior of the box would be reduced to 195px by 195px.
+        </p>
+        <h4>Padding</h4>
+        <figure>
+          <img src="../imgs/padding.svg" alt="Boxes with different padding applied">
+          <figcaption>Examples of Padding</figcaption>
+        </figure>
+        <p>
+          By default there is no padding on an element and if you just have a bunch of text, that may work out to be ok. But what if you have a button with a colored background? You don't want the background color to just be around our content, you want a little space around the content in the button. Enter padding! Padding is the spacing in-between the border and our content.
+        </p>
+        <p>
+          Whew! Much like Thanksgiving dinner, that's a lot to digest. It takes some time to truly understand how margins, borders, and padding effect our elements. But with practice and using the developer tools in your browser, it won't take long for you to become a master of the "box-model".
+        </p>
+      </div>
+      
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a href="git.html">The Importance of Version Control</a></li>
+          <li><a class="active" href="#">CSS Concepts</a></li>
+          <li class="disabled"><a href="#">Blog Post 3</a></li>
+          <li class="disabled"><a href="#">Blog Post 4</a></li>
+          <li class="disabled"><a href="#">Blog Post 5</a></li>
+          <li class="disabled"><a href="#">Blog Post 6</a></li>
+          <li class="disabled"><a href="#">Blog Post 7</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>
