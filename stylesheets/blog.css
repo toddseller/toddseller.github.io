@@ -50,3 +50,12 @@
 .single {
   padding: 15px 0;
 }
+figure {
+  width: 600px;
+  margin: 0 auto;
+}
+figcaption {
+  font-size: .6em;
+  text-align: center;
+}
+
