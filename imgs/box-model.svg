@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 350" style="enable-background:new 0 0 700 350;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:0.7144;stroke-miterlimit:10;stroke-dasharray:8.5732;}
+	.st1{fill:#26ACFF;stroke:#000000;stroke-width:0.7464;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:0.7906;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:0.8563;stroke-miterlimit:10;stroke-dasharray:10.2762;}
+	.st4{font-family:'MyriadPro-Regular';}
+	.st5{font-size:18px;}
+</style>
+<rect class="st0" width="700" height="350"/>
+<rect x="25" y="25" class="st1" width="650" height="300"/>
+<rect x="50" y="50" class="st2" width="600" height="250"/>
+<rect x="75" y="75" class="st3" width="550" height="200"/>
+<text transform="matrix(1 0 0 1 323.4236 19.283)" class="st4 st5">Margin</text>
+<text transform="matrix(1 0 0 1 324.7639 43.345)" class="st4 st5">Border</text>
+<text transform="matrix(1 0 0 1 318.8242 67.283)" class="st4 st5">Padding</text>
+<text transform="matrix(1 0 0 1 319.6072 180.2829)" class="st4 st5">Content</text>
+</svg>
