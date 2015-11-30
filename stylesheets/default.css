@@ -184,9 +184,13 @@ footer {
   display: inline-block;
 }
 .social img {
-  padding-right: 12px;
+  margin-right: 12px;
   width: 40px;
   height: auto;
+}
+.social a:hover img {
+  border-radius: 50%;
+  background-color: #ff002d;
 }
 .clearfix {
   clear: both;
