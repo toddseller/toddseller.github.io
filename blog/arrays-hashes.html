@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arrays and Hashes</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text blog-title">
+        <h1>Arrays and Hashes</h1>
+        <h2>A Newbies Guide to Development</h2>
+      </div>
+    </section>
+    <section class="post">
+      <div class="col-8 post-text">
+        <h3>December 7, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>What is the difference between an array and a hash?</h4>
+        <p> 
+          Before we get into the differences between an array and a hash, I guess it would be beneficial to know what they are first.
+        </p>
+        <h4>Arrays</h4>
+        <p>
+          Simply put, arrays are a way to store multiple elements within Ruby. Well that's great; but what does that mean? Ok let's look at it this way. Imagine you needed to go to the grocery store. You get a pad of paper and you start writing down everything you need. It may look something like this:
+        </p>
+        <ol>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+          <li>Coffee</li>
+          <li>Cereal</li>
+          <li>Cookies</li>
+        </ol>
+        <p>
+          Alright, now don't judge me based on my shopping list, let's just stay focused on the example. Anyway, you can think of the pad of paper as the array and the items of your shopping list are the elements of the array. Pretty simple right?! Arrays are just an ordered collection of objects. Now unlike our shopping list example, arrays do not start ordering with 1. In fact, arrays are sometimes referred to as zero index arrays. Which just means that the first item in our array sits in the zeroth position. So if our shopping list was actually an array it would look more like this:
+          <ol start="0">
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Bread</li>
+            <li>Coffee</li>
+            <li>Cereal</li>
+            <li>Cookies</li>
+          </ol>
+          Ok, I'm starting to get it, but how does this looking Ruby and what type of elements are arrays used for? Well those are very good questions and pretty simple to answer. First arrays can store any string, integer, or even another array as elements. When we create an array, it would look like this:<br><br>
+          <script src="https://gist.github.com/toddseller/a418fc95c97fb3bea8be.js"></script>
+          So here we have an array called <code>my_aray</code> with the strings <code>"Apples", "Oranges"</code>, the integer <code>67</code>, and an array of <code>["hello","world"]</code>.
+        </p>
+        <h4>Hashes</h4>
+        <p>
+          Hashes, are very similar to arrays in that they store multiple elements. Now arrays use a zero index to store the "position" of the value within an array. But what happens if that really doesn't work well for us, this is where hashes come into play. Although we could use our shopping list example again, let's try something different. Alright, it's the end of the month and we are putting bills together to see if we went over budget and it may look something like this:
+          <ul>
+            <li>Rent: $2,5000</li>
+            <li>Car: $279</li>
+            <li>Water: $300 (It is California after all)</li>
+            <li>Utilities: $300</li>
+            <li>Groceries: $1,500</li>
+          </ul>
+          So in this example our budget is the hash and the bills are our elements with the type of bill being the "key" for the dollar amount "value". That's it, again pretty simple. Now let's see how that might look in Ruby.<br><br>
+          <script src="https://gist.github.com/toddseller/280fc602af5952c3b040.js"></script>
+          The great thing about hashes is that we can use a string as the "key" so you can be pretty specific with the key, which may give you more insight into the key's value. An important thing to remember with hashes is that each key has to be unique to the hash, but multiple keys can have the same value. If you were to accidentally reuse a key, the hash would store that last value that was added.
+        </p>
+        <h4>So what's the difference?</h4>
+        <p>
+          Although both arrays and hashes store multiple elements within them, the way we access them is different. In an array we access the value at a specific index. Remember, if you want to access the first element of an array you would need to use 0 not 1 similar to this:<br><br>
+          <script src="https://gist.github.com/toddseller/7981946a6ccbf69a3fb6.js"></script>
+          With a hash, we access the value of elements using their keys, similar to this:<br><br>
+          <script src="https://gist.github.com/toddseller/30ee0bf976edee43cd22.js"></script>
+          Did you notice what I did there? Yep, there are a few different ways to assign the keys and values in a hash and I just wanted to show you a different way. However, it is important to be consistent because it will change the way in which you call the value. For example, in our first example we would actually call the value like this <code>my_hash["Car"]</code>. Of course, the value returned would be the same but you cannot assign one way and call them another.
+        </p>
+        <p>
+          So why would you use one over another? In some cases I think it really comes down to personal preference because they are similar in their function. A good case for using a hash over an array may come in the example of storing user names and passwords. In this example, the user name would be the key and the password would be the value. It is a little easier than an array because if a person forgot their password it would be easy to find based on their user name being the key. If we were to use an array, you would have to try and remember at what index the user's password is stored. In fact you may even need to create a hash to store that information.
+        </p>
+        <p>
+          Well, I can honestly say that I went over my alloted time limit on this post, but I hope that it gives you a better understanding of arrays and hashes in Ruby.
+        </p>
+      </div>
+      
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a href="git.html">The Importance of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Concepts</a></li>
+          <li><a class="active" href="#">Arrays and Hashes</a></li>
+          <li class="disabled"><a href="#">Blog Post 4</a></li>
+          <li class="disabled"><a href="#">Blog Post 5</a></li>
+          <li class="disabled"><a href="#">Blog Post 6</a></li>
+          <li class="disabled"><a href="#">Blog Post 7</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>

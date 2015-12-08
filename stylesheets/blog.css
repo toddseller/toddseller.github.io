@@ -46,6 +46,9 @@
 .post-links li a.active {
   color: #ff002d;
   pointer-events: none;
+}
+.post ul li {
+  display: block;
 } 
 .single {
   padding: 15px 0;
