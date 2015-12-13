@@ -1,7 +1,6 @@
 <?php
-if(isset($_REQUEST'honeypot') && $_REQUEST'honeypot' && $_REQUEST'honeypot' != '')
-{
-  exit;
+if($_POST['honeypot'] != ''){
+   die("You spammer!");
 }
 if(!isset($_POST['submit']))
 {
