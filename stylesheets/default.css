@@ -104,6 +104,7 @@ nav li a:hover {
 }
 .skills h3 {
   font-weight: 800;
+  color: #000000;
 }
 .skills a {
   text-decoration: none;
@@ -146,6 +147,8 @@ nav li a:hover {
   pointer-events: none;
 }
 footer {
+  position: relative;
+  bottom: 0;
   background-color: #1d1d1d;
   height: 80px;
   width: 100%;
