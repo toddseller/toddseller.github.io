@@ -6,6 +6,7 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
+$ip = $_SERVER['REMOTE_ADDR'];
 
 //Validate first
 if(empty($name)||empty($visitor_email)) 
@@ -24,7 +25,8 @@ $email_from = 'Todd Seller';
 $email_subject = "All About Me!";
 $email_body = "$name wants more information. You better reach out to them!\n".
               "Name: ".$name."\n"
-             ."Email: ".$visitor_email."\n";
+             ."Email: ".$visitor_email."\n"
+             ."Contacted you from ip address: ".$ip."\n";
     
 $to = "me@toddseller.com";
 $headers = "From: $email_from \r\n";
