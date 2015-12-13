@@ -19,13 +19,14 @@ if(empty($name)||empty($visitor_email))
     exit;
 }
 
-if(IsInjected($visitor_email))
+if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL))
 {
     echo "Oops! Please enter a valid email.";
     exit;
 }
 
-if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL)) {
+if(IsInjected($visitor_email))
+{
     echo "Oops! Please enter a valid email.";
     exit;
 }
