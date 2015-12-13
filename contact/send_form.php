@@ -25,6 +25,11 @@ if(IsInjected($visitor_email))
     exit;
 }
 
+if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL)) {
+    echo "Oops! Please enter a valid email.";
+    exit;
+}
+
 $email_from = 'Todd Seller';
 $email_subject = "All About Me!";
 $email_body = "$name wants more information. You better reach out to them!\n".
