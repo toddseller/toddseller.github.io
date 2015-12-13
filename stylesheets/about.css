@@ -10,7 +10,7 @@
   margin-top: 175px !important;
 }
 .contact-form {
-  margin: -16px 0 0;
+  margin: -30px 0 0;
   padding-bottom: 50px;
   width: 100%;
   /*background-color: #c4c4c4;*/
@@ -67,7 +67,7 @@ input {
   color: #999;
 }
 input.button {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .button {
   display: block;
