@@ -127,6 +127,7 @@ nav li a:hover {
 }
 .col-skills {
   padding: 0 15px 50px;
+  margin-bottom: 75px;
 }
 .button {
   background-color: #ff002d;
@@ -147,7 +148,7 @@ nav li a:hover {
   pointer-events: none;
 }
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   background-color: #1d1d1d;
   height: 80px;
