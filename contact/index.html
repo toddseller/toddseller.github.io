@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Todd Seller</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link rel="stylesheet" href="../stylesheets/about.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero clearfix">
+      <div class="hero-text">
+        <h1>Thanks for Visiting!</h1>
+        <p>
+          In case you missed it somewhere, I'm Todd Seller. I've spent the better part of the past 20 years involved in sales and marketing. I'm currently on a journey to add full-stack developer to my skill set. I appreciate you spending time getting to know me and browse my portfolio. Feel free to fill out the form to contact me directly.
+        </p>
+      </div><!-- end hero-text -->
+    </section><!-- end hero -->
+    <section class="contact-form">
+      <form id="subscribe" class="form" role="form" method="post" action="http://toddseller.com/about/send_form.php">
+        <div class="form-group">
+          <label class="sr-only" for="subscribe-name">Name: </label>
+          <input name="name" type="text" required id="name" class="form-control" placeholder="John Doe" autofocus="autofocus">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="subscribe-email">Email: </label>
+          <input name="email" type="email" required id="email" class="form-control" placeholder="john.doe@email.com">
+        </div>
+        <input type="submit" name="submit" id="submit" class="button" value="Submit!">
+      </form>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>
