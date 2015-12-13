@@ -19,7 +19,7 @@ if(empty($name)||empty($visitor_email))
     exit;
 }
 
-if (filter_var($visitor_email, FILTER_VALIDATE_EMAIL) === false)
+if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL))
 {
     echo "Oops! Please enter a valid email.";
     exit;
