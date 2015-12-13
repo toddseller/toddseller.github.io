@@ -18,7 +18,7 @@
 input {
   font: inherit;
 }
-.thepot {
+#honeypot {
   display: none;
 }
 .form {
