@@ -79,7 +79,7 @@ input.button {
   border-radius: 50%;
   background-color: rgba(255,0,45,.6);
 }
-footer {
+footer.footer-thanks {
   position: absolute;
   bottom: 0;
   z-index: 1;
