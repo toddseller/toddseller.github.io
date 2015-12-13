@@ -18,6 +18,9 @@
 input {
   font: inherit;
 }
+.thepot {
+  display: none;
+}
 .form {
   width: 460px;
   margin: 0 auto;
