@@ -211,3 +211,8 @@ footer {
   width: 22.5%;
   float: left;
 }
+code {
+  background-color: #f4f4f4;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
