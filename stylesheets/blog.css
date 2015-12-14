@@ -64,6 +64,10 @@ figcaption {
 }
 p a {
   color: #ff002d;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
 }
 p a:visited {
   color: #ff002d;
