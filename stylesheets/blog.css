@@ -62,4 +62,9 @@ figcaption {
   font-size: .6em;
   text-align: center;
 }
-
+p a {
+  color: #ff002d;
+}
+p a:visited {
+  color: #ff002d;
+}

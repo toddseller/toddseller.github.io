@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Enumerable Methods</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text blog-title">
+        <h1>Enumerable Methods</h1>
+        <h2>A Newbies Guide to Development</h2>
+      </div>
+    </section>
+    <section class="post">
+      <div class="col-8 post-text">
+        <h3>December 13, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>The Enumerable Module</h4>
+        <p>
+          This week we are going to be diving into the enumerable method <code>group_by</code>; before we do, I guess it would be good to start at the beginning. The <code>group_by</code> method is part of a special module in Ruby called the Enumerable Module. The enumerable module basically is a special set of methods that allow us to traverse, search, sort and manipulate arrays and hashes more easily. Imagine enumerable methods as the <code>loop</code> method on steroids.
+        </p>
+        <h4>group_by</h4>
+        <p>
+          Although there are several methods within the Enumerable Module, as you can see in the <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html" target="_blank">Ruby docs</a>, I have decided to focus on the <code>group_by</code> method. All right, well from the name of the method I bet that you can figure out what this method will do, the <code>group_by</code> method groups elements. But which elements and how? Good question, essentially, the method groups the elements of an array and puts them as the value into a hash and it uses the results of the code block as the key. I know that sounds confusing, so let's take a look at some code.<br>
+          <script src="https://gist.github.com/toddseller/7fa2de26bd017f8aa9b1.js"></script>
+          The above is an expanded example of what is in the Ruby docs, so let's break it down! Firstly, we are generating a range of numbers from 0 up to, but not including, 15. We then pass the number range into the code block <code>{ |i| i % 3 }</code>, which is basically taking each number and returning the remainder of the number divided by 3. Pretty simple and self explanatory, but this is where the magic of the <code>group_by</code> method comes into play. <code>group_by</code> has returned a new hash and has set the remainder as the key and all the numbers that equal that remainder as the key's value.
+        </p>
+        <p>
+          All right, that works great for integers, but what about strings? Well, the <code>group_by</code> method works on them as well! Let's take a look:<br>
+          <script src="https://gist.github.com/toddseller/125e389e16aeb4d60cf3.js"></script>
+          So here, we created an array called <code>dogs</code> and added the elements of a few breeds of dogs. Next we used the <code>group_by</code> method on our array with the code block to group them by the length of the array elements. So new hash is returned with the number of characters in the string as the key and the matching array elements as the value. Know it is important to remember that the " " is also counted as a character when <code>length</code> is called on our array elements.
+        </p>
+        <p>
+          Well that seems pretty straight forward. In our first example we were using the remainder of our modulus expression as the key and the matching numbers as the value. And in our second example we used the length of characters in the strings as the key and the matching strings as the value. But what else can we do? Well, what if I told you that we could actually create a random grouping? I know it sounds pretty crazy, so let's take a look at that:<br>
+          <script src="https://gist.github.com/toddseller/3ecdd438bca2dd492716.js"></script>
+          WHAT?! Wow, do you see that? It really did create a random grouping. Ok, so let's see what happened here. First, we called <code>group_by</code> on the same array of dogs we used previously. Then we used <code>{ rand(4) + 1 }</code> in our code block, which is essentially saying create a random number from 0 up to 4 and add 1. Now I know you're thinking, why add 1? Mainly because we want to eliminate 0 as a possible answer, although in this example I guess it really wouldn't matter. But in a case where we don't want 0 as the result of the randomly generated number we add 1. As you can see by the results, it really is generating a random grouping and assigning the result of the randomly generated number as the key and a random grouping as the value.
+        </p>
+        <p>
+          Well that is some really powerful stuff and <code>group_by</code> is just one of the methods available to us in the Enumerable Method. I highly recommend spending some time reading through the <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html" target="_blank">Ruby docs</a> to see everything you can do. I've also found that sometimes it helps to create your own examples to test and see if the returned value is what you thought it was going to be!
+        </p>
+      </div>
+      
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a href="git.html">The Importance of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Concepts</a></li>
+          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a class="active" href="#">Enumerable Methods</a></li>
+          <li class="disabled"><a href="#">Blog Post 5</a></li>
+          <li class="disabled"><a href="#">Blog Post 6</a></li>
+          <li class="disabled"><a href="#">Blog Post 7</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>
