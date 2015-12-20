@@ -21,7 +21,7 @@
   text-decoration: none;
 }
 .hero-text a:hover {
-  color: #000000;
+  text-decoration: underline;
 }
 .resume {
   margin: 180px 0 100px;
