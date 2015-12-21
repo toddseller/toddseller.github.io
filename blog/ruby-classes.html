@@ -40,7 +40,33 @@
           Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
         </p>
         <h4>Ruby Classes</h4>
-        
+        <p>
+          I guess we have to first define what a Class is in Ruby, which in itself can be somewhat confusing. In Ruby, everything is an Object and you can think of Classes as the declaration of an Object. So a Class is the shell of an object and it is filled with the methods that define that Class. Let's take a look by declaring on new Class, we'll call it <code>Dog</code>.
+        </p>
+        <p>
+          One thing you'll notice is that classes are capitalized, that is kind of important. So let's create our <code>Dog</code> class:
+          <script src="https://gist.github.com/toddseller/ab232dd3964fd9148443.js"></script>
+          That's it, we're done! Well not really. We have the shell of our class, but we need to bring <code>Dog</code> to life and we need to start by initializing our <code>Dog</code>.
+        </p>
+        <p>
+          <script src="https://gist.github.com/toddseller/eeafa8d85bc73384fc69.js"></script>
+          So <code>puppy</code> is a new instance of <code>Dog</code> and we have passed it the <code>name = 'Atticus'</code> and the <code>breed = 'German Shepherd'</code>. Within our class, <code>@name</code> and <code>@breed</code> are <em>instance variables</em> and can be used by all the methods within our class. Using <em>instance methods</em> we can now start to define the behaviors that control our <code>dog</code>.
+        </p>
+        <p>
+          Let's start by adding another instance variable when <code>Dog</code> gets initialized, the instance variable will be <code>@hungry</code> and we'll initialize to <code>false</code>.
+          <script src="https://gist.github.com/toddseller/102d50c73a1d243cc78f.js"></script>
+        </p>
+        <p>
+          We are on our way, but we need to do more with our <code>Dog</code>, otherwise how much fun is he? How about we create a new method <code>bored</code>.
+          <script src="https://gist.github.com/toddseller/9e65e3cbb8322c855b38.js"></script>
+        </p>
+        <p>
+          All right, we are getting close to having a really <code>Dog</code>; let's add two more methods. The first method will make our <code>Dog</code> sleep and the second will be able to check on the status of our <code>Dog</code>.
+          <script src="https://gist.github.com/toddseller/84167eefae9e2eedb427.js"></script>
+        </p>
+        <p>
+          Well, you did it! You created a new <code>Dog</code> Class in Ruby, and you are the proud owner of a new <code>puppy</code>! What is really amazing is just like in real life, you now have to care for your pet! So you better check in on him, I think he may be <code>@hungry</code>, <code>@bored</code>, or <code>@tired</code>.
+        </p>
       </div>
       
       <div class="col-4 post-links">
