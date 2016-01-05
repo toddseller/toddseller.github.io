@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Ruby Classes</title>
+    <title>Ruby vs JavaScript Iteration</title>
     <!-- load stylesheets -->
     <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
     <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
@@ -29,7 +29,7 @@
     </header>
     <section class="hero">
       <div class="hero-text blog-title">
-        <h1>Ruby Classes</h1>
+        <h1>Ruby vs JavaScript Iteration</h1>
         <h2>A Newbies Guide to Development</h2>
       </div>
     </section>
@@ -39,33 +39,17 @@
         <p>
           Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
         </p>
-        <h4>Ruby Classes</h4>
+        <h4>LET'S GET READY TO RUMBLE!</h4>
         <p>
-          I guess we have to first define what a Class is in Ruby, which in itself can be somewhat confusing. In Ruby, everything is an Object and you can think of Classes as the declaration of an Object. So a Class is the shell of an object and it is filled with the methods that define that Class. Let's take a look by declaring on new Class, we'll call it <code>Dog</code>.
+          Okay, not really. Truthfully I'm just too tired and as I've seen over these past 7 weeks, either Ruby or JavaScript can kick my butt. This week I found out what is at the bottom of the rabbit hole. I also discovered that if you sit in a chair too long, you do leave an imprint of your butt. I spent far too long on my solo challenge. What started off as a complicatedly simple idea, quickly spiraled out of control (You can try my game, <a href="../projects/war.html" target="_blank">Blitzkrieg WAR</a>, here). I couldn't leave it alone and I ended up turning in this weeks challenges late. You could say that I was stuck in an infinite loop. See what I did there?!?
         </p>
         <p>
-          One thing you'll notice is that classes are capitalized, that is kind of important. So let's create our <code>Dog</code> class:
-          <script src="https://gist.github.com/toddseller/ab232dd3964fd9148443.js"></script>
-          That's it, we're done! Well not really. We have the shell of our class, but we need to bring <code>Dog</code> to life and we need to start by initializing our <code>Dog</code>.
+          Both Ruby and JavaScript have basic ways you can iterate. You can iterate over an Array or you can even iterate over a block of code. While some of the conventions between Ruby and JavaScript are the same, for and while loops, there are special ways to iterate and Ruby seems to have a few more tricks up it's sleeves compared to JavaScript. Most of my examples in JavaScript will be snippets of code I used in my game, again, I'm just too tired to try and think of anything else. My attempt will be to show the code in JavaScript and the same code in Ruby. This will be a winner takes all Battle Royale so, "LET'S GET READY TO RUMBLE!"
         </p>
         <p>
-          <script src="https://gist.github.com/toddseller/eeafa8d85bc73384fc69.js"></script>
-          So <code>puppy</code> is a new instance of <code>Dog</code> and we have passed it the <code>name = 'Atticus'</code> and the <code>breed = 'German Shepherd'</code>. Within our class, <code>@name</code> and <code>@breed</code> are <em>instance variables</em> and can be used by all the methods within our class. Using <em>instance methods</em> we can now start to define the behaviors that control our <code>Dog</code>.
-        </p>
-        <p>
-          Let's start by adding another instance variable when <code>Dog</code> gets initialized, the instance variable will be <code>@hungry</code> and we'll initialize to <code>false</code>. We'll also create our first instance method <code>feed</code>.
-          <script src="https://gist.github.com/toddseller/102d50c73a1d243cc78f.js"></script>
-        </p>
-        <p>
-          We are on our way, but we need to do more with our <code>Dog</code>, otherwise how much fun is he? How about we create a new method <code>bored</code>.
-          <script src="https://gist.github.com/toddseller/9e65e3cbb8322c855b38.js"></script>
-        </p>
-        <p>
-          All right, we are getting close to having a real <code>Dog</code>; let's add two more methods. The first method will make our <code>Dog</code> sleep and the second will be able to check on the status of our <code>Dog</code>.
-          <script src="https://gist.github.com/toddseller/84167eefae9e2eedb427.js"></script>
-        </p>
-        <p>
-          Well, you did it! You created a new <code>Dog</code> Class in Ruby, and you are the proud owner of a new <code>puppy</code>! What is really amazing is just like in real life, you now have to care for your pet! So you better check in on him, I think he may be <code>@hungry</code>, <code>@bored</code>, or <code>@tired</code>.
+          Let's be honest, I'm lazy. I will spend a very long time trying to figure out a way to avoid doing something. Sometimes this works out, other times, I waste more time and energy than just completing the task at hand. That being said, when I was creating my game I didn't want to manually have to create an Array of 52 cards! Let's face it, that would be incredibly boring and time consuming. But what could I do? How could I make my life easier? In this corner we have the JavaScript <code>for</code> loop!
+          <script src="https://gist.github.com/toddseller/85d40ad961f15ccb25f9.js"></script>
+          So what are we doing here? Well let's break it down. First we need a way to hold our newly created deck of cards, think of it as the box that holds a real deck of cards. That box is our empty Array <code>cards</code>. We also create an Array <code>suits</code> that has the value of our card's suits.
         </p>
       </div>
       
@@ -75,8 +59,8 @@
           <li><a href="css-concepts.html">CSS Concepts</a></li>
           <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
           <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
-          <li><a class="active"  href="#">Ruby Classes</a></li>
-          <li><a href="javascript.html">Ruby vs JavaScript Iteration</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes</a></li>
+          <li><a class="active" href="#">Ruby vs JavaScript Iteration</a></li>
           <li class="disabled"><a href="#">Blog Post 7</a></li>
         </ul>
       </div>
