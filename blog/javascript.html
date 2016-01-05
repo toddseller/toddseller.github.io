@@ -35,7 +35,7 @@
     </section>
     <section class="post">
       <div class="col-8 post-text">
-        <h3>December 20, 2015</h3>
+        <h3>January 5, 2015</h3>
         <p>
           Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
         </p>
@@ -49,7 +49,31 @@
         <p>
           Let's be honest, I'm lazy. I will spend a very long time trying to figure out a way to avoid doing something. Sometimes this works out, other times, I waste more time and energy than just completing the task at hand. That being said, when I was creating my game I didn't want to manually have to create an Array of 52 cards! Let's face it, that would be incredibly boring and time consuming. But what could I do? How could I make my life easier? In this corner we have the JavaScript <code>for</code> loop!
           <script src="https://gist.github.com/toddseller/85d40ad961f15ccb25f9.js"></script>
-          So what are we doing here? Well let's break it down. First we need a way to hold our newly created deck of cards, think of it as the box that holds a real deck of cards. That box is our empty Array <code>cards</code>. We also create an Array <code>suits</code> that has the value of our card's suits.
+          So what are we doing here? Well let's break it down. First we need a way to hold our newly created deck of cards, think of it as the box that holds a real deck of cards. That box is our empty Array <code>cards</code>. We also create an Array <code>suits</code> that has the value of our card's suits. Now for the actual loop. We need a way to keep track of where we are in the loop, so we create the variable <code>i</code> and we assign it <code>= 2</code>. Next we need to determine how many times we want to iterate, so we set it it to run while <code>i &lt; 15</code>. Okay, so we have set up the loop and we know how many times we want to iterate through it, we're done! Well not quite, if we left it at that it would become an infinite loop because <code>i = 2</code> and 2 will always be less than 15. We need a way to increase our variable <code>i</code>, so we then say <code>i++</code>, which is just a fancy way of writing <code>i + 1 = i</code>. Now here is a catch, do you think that <code>i++</code> is the same as <code>++i</code>? Well actually they are similar, in the fact that they increment the variable <code>i</code> each time we run the loop. But they differ as to when we make the increment. <code>i++</code> is telling us to increment <code>i</code> after we run the loop, while <code>++i</code> is telling us to increment <code>i</code> and then run the loop. So be careful how you create the incremental statement.
+        </p>
+        <p>
+          All right, so we have set-up our <code>for</code> loop and it evaluates to true so we now jump inside the brackets and get to the meat of our&#8230; What?!? Another <code>for</code> loop? Yep, you can create a loop within a loop. Alright, lets break this loop down! Again we create a variable to keep track of where we are in the loop. We've already used <code>i</code> so this time, we set the variable <code>j = 0</code>. Wait, <code>0</code> last time we set it to <code>2</code>! Well it is because we are using the variable for two purposes. Firstly, we are using it to help us where we are in the loop and we are using it to evaluate whether or not we will continue to run our loop, but we are also using it's value. I know that the suspense is killing you, but let's get through the creation of this <code>for</code> loop statement first. Alright, we need to determine how long to run this loop so this time we set it to <code>j &lt; suits.length</code>. This time we will run through the loop as long as <code>j</code> is less than the length of our suits Array. Next we need to make sure that we increment the value of <code>j</code> so we say <code>j++</code>. Remember, we want to run the loop first and then increment <code>j</code>.
+        </p>
+        <p>
+          Now we jump into the heart of our loops and we start to create our deck of cards! Here we are taking the value of <code>i</code>, which at this point is <code>2</code> and adding an underscore and the value of <code>suits[j]</code>. Now here is why we set the values of our variables to what we did. <code>i</code> represents the value of our card, in this case 2. <code>j</code> represents the index of our suits Array, in this case <code>0</code> or the value of our first element 'C'. So the reason we didn't set <code>i = 0</code> is because there is no 0 of clubs, our lowest card number is 2. 
+        </p>
+        <p>
+          Alright, so what happens now? Well the loop completed so we go back to the first loop and increment <code>i</code>, right? Well, no. We run the loops based on how they are nested. So until <code>j</code> isn't less than <code>suits.length</code>, we keep running that loop incrementing <code>j</code> each time. Basically, we are going to run this loop until we have created a 2 card for each suit. Now, once we have done that our <code>for</code> loop is no longer true, so we jump back out into our original loop and we increment <code>i</code> by one. We will repeat this processes until we have created all 52 cards! Much easier than manually creating an Array of 52 cards.
+        </p>
+        <p>
+          Now let's take a look at how we could go about this in Ruby.
+          <script src="https://gist.github.com/toddseller/778482af9e809d164351.js"></script>
+          Wait, where's the <code>for</code> loop and how do we know when to stop? I told you that Ruby had a few more tricks up it's sleeve, when it came to iterating! We are actually controlling everything with the <code>.each</code> method. This is built into Ruby's library and will iterate over "each" element.
+        </p>
+        <p>
+          So this is getting long and I'm sure that you are bored, so will break this down fairly quickly. First we create some variables <code>values</code>, which is equal to a range of numbers from 2 to 14, <code>suits</code>, which is an Array of our 4 suits, and lastly <code>cards</code>, which is an empty Array to hold our cards. So far, this is looking pretty similar to JavaScript with the exception of adding the variable <code>values</code>.
+        </p>
+        <p>
+          Now let's jump into the code! Again, because of the <code>.each</code> method in Ruby, there is no need to actually create a <code>for</code> loop. Here we are saying that for each element within the Array of <code>suits</code>, run this code block. Similar to what we did in JavaScript, I have nested another code block within <code>suits</code>. This is saying that of each number in the range of <code>values</code> run the code block. That code block pushes the current value of <code>values</code> and the current element of <code>suits</code> into our <code>cards</code> Array. This process will repeat until we have iterated through each element of <code>values</code> for each element of <code>suits</code>.
+        </p>
+        <h4>And the winner is!?</h4>
+        <p>
+          Well for efficiency and brevity of code, I would have to say Ruby. But let's face it, whether we are using a traditional <code>for</code> loop, which we still could have done for Ruby, or we are using built in methods like <code>.each</code>, ultimately we achieved the same thing; we created a brand new deck of cards! So pat yourself on the back and let's call it a day!
         </p>
       </div>
       
