@@ -132,14 +132,12 @@ function playHand(temp) {
   var player1Value = parseInt(player1Hand.split('_'));
   var player2Value = parseInt(player2Hand.split('_'));
   if(player1Value > player2Value) {
-    player1.score += 2;
-    winner('win1');
+    winner('win1', false);
     showCard('player1', player1Hand);
     showCard('player2', player2Hand);
     gameWon(temp.player1Deck);
   } else if (player1Value < player2Value) {
-    player2.score += 2;
-    winner('win2');
+    winner('win2', false);
     showCard('player1', player1Hand);
     showCard('player2', player2Hand);
     gameWon(temp.player1Deck);
@@ -172,13 +170,11 @@ function war(hand1, value1, hand2, value2) {
       war1Value = parseInt(warHand1.split('_'));
       war2Value = parseInt(warHand2.split('_'));
       if(war1Value > war2Value) {
-        player1.score += 10;
-        winner('win1');
+        winner('win1', true);
         showCard('player1', warHand1);
         showCard('player2', warHand2);
       } else if (war1Value < war2Value) {
-        player2.score += 10;
-        winner('win2');
+        winner('win2', true);
         showCard('player1', warHand1);
         showCard('player2', warHand2);
       }
@@ -188,19 +184,20 @@ function war(hand1, value1, hand2, value2) {
   } 
 }
 
-function winner(object) {
+function winner(object, war) {
+  var isWar = war;
   switch (object) {
     case 'win1':
       document.getElementById('win1').style.display = "block";
       document.getElementById('win2').style.display = "none";
       document.getElementById('war').style.display = "none";
-      addRow('player1-wins', player1.score);
+      addRow('player1-wins', player1.score, isWar);
       break;
     case 'win2':
       document.getElementById('win1').style.display = "none";
       document.getElementById('win2').style.display = "block";
       document.getElementById('war').style.display = "none";
-      addRow('player2-wins', player2.score);
+      addRow('player2-wins', player2.score, isWar);
       break;
       case 'war':
       document.getElementById('win1').style.display = "none";
@@ -239,16 +236,33 @@ function gameWon(length) {
   }
 }
 
-function addRow(player, score) {
+function addRow(player, score, war) {
   var playerId;
+  var newScore = score;
+  var updateScore = score;
+  if(war){
+    newScore += 10;
+    updateScore += 10;
+  } else {
+    updateScore += 2;
+  }
   if(player === 'player1-wins') {
     playerId = player1.name;
+    player1.score = updateScore;
   } else {
     playerId = player2.name;
+    player2.score = updateScore;
   }
-    if (score !== 2) {
+  console.log(player1.score);
+  console.log(player2.score);
+    if (updateScore === 10 && newScore === 10 && war === true) {
+      var h2 = document.createElement('h2');
+      h2.id = player;
+      h2.innerHTML = playerId + ' won 10 cards!';
+      document.getElementById('display').appendChild(h2);
+    } else if (updateScore !== 2) {
       var test = document.getElementById(player);
-      test.innerHTML = playerId + ' won ' + score + ' cards!';
+      test.innerHTML = playerId + ' won ' + updateScore + ' cards!';
     } else {
       var h2 = document.createElement('h2');
       h2.id = player;
