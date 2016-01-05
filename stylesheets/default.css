@@ -199,6 +199,10 @@ footer {
 .clearfix {
   clear: both;
 }
+.col-12 {
+  width: 99.974359%;
+  float: left;
+}
 .col-4 {
   width: 30.833333%;
   float: left;
