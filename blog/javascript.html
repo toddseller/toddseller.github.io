@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ruby vs JavaScript Iteration</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="../index.html">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text blog-title">
+        <h1>Ruby vs JavaScript Iteration</h1>
+        <h2>A Newbies Guide to Development</h2>
+      </div>
+    </section>
+    <section class="post">
+      <div class="col-8 post-text">
+        <h3>December 20, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>LET'S GET READY TO RUMBLE!</h4>
+        <p>
+          Okay, not really. Truthfully I'm just too tired and as I've seen over these past 7 weeks, either Ruby or JavaScript can kick my butt. This week I found out what is at the bottom of the rabbit hole. I also discovered that if you sit in a chair too long, you do leave an imprint of your butt. I spent far too long on my solo challenge. What started off as a complicatedly simple idea, quickly spiraled out of control (You can try my game, <a href="../projects/war.html" target="_blank">Blitzkrieg WAR</a>, here). I couldn't leave it alone and I ended up turning in this weeks challenges late. You could say that I was stuck in an infinite loop. See what I did there?!?
+        </p>
+        <p>
+          Both Ruby and JavaScript have basic ways you can iterate. You can iterate over an Array or you can even iterate over a block of code. While some of the conventions between Ruby and JavaScript are the same, for and while loops, there are special ways to iterate and Ruby seems to have a few more tricks up it's sleeves compared to JavaScript. Most of my examples in JavaScript will be snippets of code I used in my game, again, I'm just too tired to try and think of anything else. My attempt will be to show the code in JavaScript and the same code in Ruby. This will be a winner takes all Battle Royale so, "LET'S GET READY TO RUMBLE!"
+        </p>
+        <p>
+          Let's be honest, I'm lazy. I will spend a very long time trying to figure out a way to avoid doing something. Sometimes this works out, other times, I waste more time and energy than just completing the task at hand. That being said, when I was creating my game I didn't want to manually have to create an Array of 52 cards! Let's face it, that would be incredibly boring and time consuming. But what could I do? How could I make my life easier? In this corner we have the JavaScript <code>for</code> loop!
+          <script src="https://gist.github.com/toddseller/85d40ad961f15ccb25f9.js"></script>
+          So what are we doing here? Well let's break it down. First we need a way to hold our newly created deck of cards, think of it as the box that holds a real deck of cards. That box is our empty Array <code>cards</code>. We also create an Array <code>suits</code> that has the value of our card's suits.
+        </p>
+      </div>
+      
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a href="git.html">The Importance of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Concepts</a></li>
+          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes</a></li>
+          <li><a class="active" href="#">Ruby vs JavaScript Iteration</a></li>
+          <li class="disabled"><a href="#">Blog Post 7</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>
