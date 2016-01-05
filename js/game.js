@@ -84,16 +84,6 @@
 // }
 
 // Refactored Code
-function startGame() {
-  document.getElementById('welcome').style.display = "none";
-}
-
-function newGame() {
-  location.reload();
-}
-
-var deck = new PlayerDeck();
-
 var player1 = {
   score: 0,
   name: 'Atticus',
@@ -102,6 +92,15 @@ var player1 = {
 var player2 = {
   score: 0,
   name: 'You',
+}
+
+function startGame() {
+  document.getElementById('welcome').style.display = "none";
+  this.deck = new PlayerDeck()
+}
+
+function newGame() {
+  location.reload();
 }
 
 function PlayerDeck() {
