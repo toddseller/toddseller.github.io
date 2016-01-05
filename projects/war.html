@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Blitzkrieg WAR</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link rel="stylesheet" href="../stylesheets/war.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="../index.html">Projects</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="war">
+      <div id="gameboard">
+        <div id="welcome" style="display: block;">
+          <img src="../imgs/war/welcome.png" alt="Welcome">
+          <input id="welcome-btn" type="button" onclick="startGame()" value="Start Game">
+        </div>
+        <div id="cards">
+          <img id="card-back1" src="../imgs/war/back.svg" alt="Playing card back" style="display: block;">
+          <img id="player1" src="">
+          <img id="card-back2" src="../imgs/war/back.svg" alt="Playing card back" style="display: block;">
+          <img id="player2" src="">
+          <input id="button" type="button" onclick="playHand(deck)" value="Deal">
+        </div>
+        <div id="display">
+          <h1 id="win1" style="display: none;">You Won!</h1>
+          <h1 id="win2" style="display: none;">Atticus Won!</h1>
+          <h1 id="war" style="display: none;">It's a WAR!</h1>
+        </div>
+        <div>
+          <img id="winner" style="display: none;" src="" alt="Winner">
+          <input id="winner-btn" style="display:none;" type="button" onclick="newGame()" value="Play Again?">
+        </div>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+    <script src="../js/game.js"></script>
+  </body>
+</html>

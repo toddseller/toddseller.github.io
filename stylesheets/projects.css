@@ -1,0 +1,35 @@
+.hero {
+  max-width: 1170px;
+  margin: 0 auto;
+  background: none;
+  height: 150px;
+  }
+.hero-text {
+  margin: 0 auto;
+  margin-top: 189px;
+  padding: 0 15px;
+  text-align: left;
+}
+.hero-text h1 {
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 1.25em;
+}
+.hero-text a {
+  color: #ff0000;
+  text-decoration: none;
+}
+.hero-text a:hover {
+  text-decoration: underline;
+}
+.center {
+  margin: 0 auto;
+}
+.skills a:visited p {
+  color: #000000;
+}
+.skills {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}

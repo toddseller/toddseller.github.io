@@ -1,0 +1,135 @@
+.war {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#gameboard {
+  margin: 0 auto;
+  margin-top: 189px;
+  width: 800px;
+  height: 450px;
+  background-color: #076324;
+  position: absolute;
+  left: 22.69%;
+}
+#welcome {
+  position: absolute;
+  z-index: 3;
+}
+#welcome-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 0;
+  width: 175px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #076324;
+  display: inline-block;
+  position: absolute;
+  top: 365px;
+  left: 40%;
+  font-size: 1.25em;
+}
+#welcome-btn:hover {
+  background-color: rgba(255,255,255,.8);
+}
+#card-back1 {
+  width: 18%;
+  height: auto;
+  position: absolute;
+  left: 75px;
+  top: 15px;
+}
+
+#player1 {
+  width: 18%;
+  height: auto;
+  position: absolute;
+  left: 325px;
+  top: 15px;
+}
+
+#card-back2 {
+  width: 18%;
+  height: auto;
+  position: absolute;
+  left: 75px;
+  top: 235px;
+}
+
+#player2 {
+  width: 18%;
+  height: auto;
+  position: absolute;
+  left: 325px;
+  top: 235px;
+  display: block;
+}
+
+#win1 {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+#win2 {
+  position: absolute;
+  right: 75px;
+  top: 20px;
+}
+#war {
+  position: absolute;
+  right: 105px;
+  top: 20px;
+}
+#button {
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 0;
+  width: 175px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #076324;
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  right: 65px;
+  font-size: 1.25em;
+}
+#button:hover {
+  background-color: rgba(255,255,255,.8);
+}
+
+#player1-wins {
+  position: absolute;
+  top: 75px;
+  right: 60px;
+}
+
+#player2-wins {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+}
+
+#winner {
+  position: absolute;
+  z-index: 3;
+}
+#winner-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 0;
+  width: 175px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #076324;
+  display: inline-block;
+  position: absolute;
+  top: 365px;
+  right: 65px;
+  z-index: 4;
+  font-size: 1.25em;
+}
+#winner-btn:hover {
+  background-color: rgba(255,255,255,.8);
+}
