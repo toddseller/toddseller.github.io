@@ -96,12 +96,12 @@ var deck = new PlayerDeck();
 
 var player1 = {
   score: 0,
-  name: 'You',
+  name: 'Atticus',
 }
 
 var player2 = {
   score: 0,
-  name: 'Atticus',
+  name: 'You',
 }
 
 function PlayerDeck() {
@@ -215,20 +215,14 @@ function gameWon(length) {
   var test = true;
   switch (test) {
     case length.length === 0 && player1.score > player2.score:
-    document.getElementById('card-back1').style.display = "none";
-    document.getElementById('card-back2').style.display = "none";
     winner(1);
     displayWinner('player1');
     break;
     case length.length === 0 && player1.score < player2.score:
-    document.getElementById('card-back1').style.display = "none";
-    document.getElementById('card-back2').style.display = "none";
     winner(2);
     displayWinner('player2');
     break;
     case length.length === 0 && player1.score === player2.score:
-    document.getElementById('card-back1').style.display = "none";
-    document.getElementById('card-back2').style.display = "none";
     winner(3);
     displayWinner('tied');
     break;
