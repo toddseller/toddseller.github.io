@@ -1,0 +1,110 @@
+.cheats-arrays {
+  height: 650px;
+}
+.cheats-strings {
+  height: 600px;
+}
+.hero {
+  height: 100px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #ff002d;
+  color: #ffffff;
+}
+.banner h2 {
+  padding-top: 5px;
+  padding-left: 25px;
+  text-align: left;
+}
+.instructions p {
+  margin: 15px 0 0;
+  padding: 0;
+}
+.method {
+  text-align: left;
+  display: block;
+}
+.method p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.method a {
+  font-size: .95em;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 0;
+}
+.method a:hover {
+  color: #ff002d;
+}
+.method a:visited {
+  color: #000000;
+}
+.method-arrays {
+  position: absolute;
+  top: 412px;
+  left: 325px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+  text-align: left;
+  width: 925px;
+}
+.method-strings {
+  position: absolute;
+  top: 1000px;
+  left: 325px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+  text-align: left;
+  width: 925px;
+}
+.example2 {
+  position: fixed;
+  top: 189px;
+}
+.hidden {
+  display: none;
+}
+.display {
+  display: block;
+}
+.tests {
+  display: inline-block;
+}
+pre {
+  width: 95%;
+  white-space: pre-wrap;
+  font-family: "Liberation Mono", Menlo, Courier, monospace;
+}
+code {
+  width: 95%;
+  white-space: pre-wrap;
+  font-family: "Liberation Mono", Menlo, Courier, monospace;
+  background-color: #ffffff;
+}
+.key {
+  color: #0086b3;
+}
+.arg {
+  font-style: italic;
+  color: #ed6a43;
+}
+.arg2 {
+  color: #ed6a43;
+}
+.kwd {
+  font-style: italic;
+  color: #a71d5d;
+}
+.str {
+  color: #183691;
+}
+.var {
+  color: #795da3;
+}
+.sym {
+  color: #a71d5d;
+}

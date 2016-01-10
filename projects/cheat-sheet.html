@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Cheat Sheet</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link rel="stylesheet" href="../stylesheets/projects.css">
+    <link rel="stylesheet" href="../stylesheets/cheat-sheet.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="../index.html">Projects</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero clearfix">
+      <div class="hero-text">
+        <h1>JavaScript Cheat Sheet</h1>
+      </div><!-- end hero-text -->
+    </section><!-- end hero -->
+    <section class="skills cheats-arrays">
+      <div class="banner">
+        <h2>Arrays</h2>
+      </div>
+      <div class="col-2 method">
+        <h3>Properties</h3>
+        <a onmouseover="displayMethod('array-length')" onmouseout="hideMethod('array-length')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length" target="_blank">.length</a>
+        <h3>Methods</h3>
+        <p>
+          <a onmouseover="displayMethod('array-concat')" onmouseout="hideMethod('array-concat')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank">.concat()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-join')" onmouseout="hideMethod('array-join')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank">.join()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-map')" onmouseout="hideMethod('array-map')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">.map()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-pop')" onmouseout="hideMethod('array-pop')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop" target="_blank">.pop()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-push')" onmouseout="hideMethod('array-push')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">.push()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-reduce')" onmouseout="hideMethod('array-reduce')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank">.reduce()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-reverse')" onmouseout="hideMethod('array-reverse')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" target="_blank">.reverse()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-shift')" onmouseout="hideMethod('array-shift')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift" target="_blank">.shift()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-sort')" onmouseout="hideMethod('array-sort')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">.sort()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('array-toString')" onmouseout="hideMethod('array-toString')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString" target="_blank">.toString()</a>
+        </p>
+      </div>
+      <div id="arrays" class="col-10 method-arrays">
+        <div id="instructions" class="display">
+          <p>Hover over a Property or Method for an example and click to go to the MDN documentation</p>
+        </div>
+        <div id="array-length" class="hidden">
+          <p>The length property represents an unsigned, 32-bit integer that is always numerically greater than the highest index in the array.</p>
+          <code><span class="kwd">var</span> <span class="var">example</span> <span class="sym">=</span> [<span class="arg2">1</span>, <span class="arg2">2</span>, <span class="arg2">3</span>, <span class="arg2">4</span>, <span class="arg2">5</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(example.<span class="key">length</span>);</code>
+          <p>Output:<br/>
+          <code>5</code>
+          </p>
+        </div>
+        <div id="array-concat" class="hidden">
+          <p>The concat() method returns a new array comprised of the array on which it is called joined with the array(s) and/or value(s) provided as arguments.</p>
+          <code><span class="kwd">var</span> <span class="var">alpha</span> <span class="sym">=</span> [<span class="str">'a'</span>, <span class="str">'b'</span>, <span class="str">'c'</span>];</code><br/>
+          <code><span class="kwd">var</span> <span class="var">numeric</span> <span class="sym">=</span> [<span class="arg2">1</span>, <span class="arg2">2</span>, <span class="arg2">3</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(alpha.<span class="key">concat</span>(numeric));</code>
+          <p>Output:<br/>
+            <code>['a', 'b', 'c', 1, 2, 3]</code>
+          </p>
+        </div>
+        <div id="array-join" class="hidden">
+          <p>The join() method joins all elements of an array into a string.</p>
+          <code><span class="kwd">var</span> <span class="var">a</span> <span class="sym">=</span> [<span class="str">'Wind'</span>, <span class="str">'Rain'</span>, <span class="str">'Fire'</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(a.<span class="key">join</span>(<span class="str">''</span>));</code><br/>
+          <code>console.<span class="key">log</span>(a.<span class="key">join</span>(<span class="str">', '</span>));</code>
+          <p>Output:<br/>
+            <code>['WindRainFire']</code><br/>
+            <code>['Wind, Rain, Fire']</code>
+          </p>
+        </div>
+        <div id="array-map" class="hidden">
+          <p>The map() method creates a new array with the results of calling a provided function on every element in this array.</p>
+          <code><span class="kwd">var</span> <span class="var">numbers</span> <span class="sym">=</span> [<span class="arg2">1</span>, <span class="arg2">4</span>, <span class="arg2">9</span>];</code><br/>
+          <code><span class="kwd">var</span> <span class="var">roots</span> <span class="sym">=</span> numbers.<span class="key">map</span>(<span class="kwd">Math</span>.sqrt);</code><br/><br/>
+          <code>console.<span class="key">log</span>(roots);</code><br/>
+          <code>console.<span class="key">log</span>(numbers);</code>
+          <p>Output:<br/>
+            <code>[1, 2, 3]</code><br/>
+            <code>[1, 4, 9]</code>
+          </p>
+        </div>
+        <div id="array-pop" class="hidden">
+          <p>The pop() method removes the last element from an array and returns that element.</p>
+          <code><span class="kwd">var</span> <span class="var">myFish</span> <span class="sym">=</span> [<span class="str">'angel'</span>, <span class="str">'clown'</span>, <span class="str">'mandarin'</span>, <span class="str">'sturgeon'</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(myFish);</code><br/><br/>
+          <code><span class="kwd">var</span> <span class="var">popped</span> <span class="sym">=</span> myFish.<span class="key">pop</span>();</code><br/><br/>
+          <code>console.<span class="key">log</span>(myFish);</code><br/>
+          <code>console.<span class="key">log</span>(popped);</code>
+           <p>Output:<br/>
+            <code>['angel', 'clown', 'mandarin', 'sturgeon']</code><br/>
+            <code>['angel', 'clown', 'mandarin']</code><br/>
+            <code>['sturgeon']</code>
+          </p>
+        </div>
+        <div id="array-push" class="hidden">
+          <p>The push() method adds one or more elements to the end of an array and returns the new length of the array.</p>
+          <code><span class="kwd">var</span> <span class="var">sports</span> <span class="sym">=</span> [<span class="str">'soccer'</span>, <span class="str">'baseball'</span>];</code><br/>
+          <code><span class="kwd">var</span> <span class="var">total</span> <span class="sym">=</span> sports.<span class="key">push</span>(<span class="str">'football'</span>, <span class="str">'swimming'</span>);</code><br/><br/>
+          <code>console.<span class="key">log</span>(sports);</code><br/>
+          <code>console.<span class="key">log</span>(total);</code>
+          <p>Output:<br/>
+            <code>['soccer', 'baseball', 'football', 'baseball']</code><br/>
+            <code>4</code>
+          </p>
+        </div>
+        <div id="array-reduce" class="hidden">
+          <p>The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.</p>
+          <code><span class="kwd">var</span> <span class="var">total</span> <span class="sym">=</span> [<span class="arg2">0</span>, <span class="arg2">1</span>, <span class="arg2">2</span>, <span class="arg2">3</span>].<span class="key">reduce</span>(<span class="kwd">function</span>(a, b) {</code><br/>
+          <code>  <span class="sym">return</span><span class="key"> a </span><span class="sym">+</span><span class="key"> b</span>;</code><br/>
+          <code>});</code><br/><br/>
+          <code>console.<span class="key">log</span>(total);</code>
+          <p>Output:<br/>
+            <code>6</code>
+          </p>
+        </div>
+        <div id="array-reverse" class="hidden">
+          <p>The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.</p>
+          <code><span class="kwd">var</span> <span class="var">myArray</span> <span class="sym">=</span> [<span class="str">'one'</span>, <span class="str">'two'</span>, <span class="str">'three'</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(myArray.<span class="key">reverse</span>());</code>
+          <p>Output:<br/>
+            <code>['three', 'two', 'one']</code>
+          </p>
+        </div>
+        <div id="array-shift" class="hidden">
+          <p>The shift() method removes the first element from an array and returns that element. This method changes the length of the array.</p>
+          <code><span class="kwd">var</span> <span class="var">myFish</span> <span class="sym">=</span> [<span class="str">'angel'</span>, <span class="str">'clown'</span>, <span class="str">'mandarin'</span>, <span class="str">'sturgeon'</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(<span class="str">'myFish before: '</span><span class="sym"> + </span>myFish);</code><br/><br/>
+          <code><span class="kwd">var</span> <span class="var">shifted</span> <span class="sym">=</span> myFish.<span class="key">shift</span>();</code><br/><br/>
+          <code>console.<span class="key">log</span>(<span class="str">'myFish after: '</span><span class="sym"> + </span>myFish);</code><br/>
+          <code>console.<span class="key">log</span>(<span class="str">'Removed this element: '</span><span class="sym"> + </span>shifted);</code>
+          <p>Output:<br/>
+            <code>myFish before: angel,clown,mandarin,surgeon</code><br/>
+            <code>myFish after: clown,mandarin,surgeon</code><br/>
+            <code>Removed this element: angel</code>
+          </p>
+        </div>
+        <div id="array-sort" class="hidden">
+          <p>The sort() method sorts the elements of an array in place and returns the array. The sort is not necessarily stable. The default sort order is according to string Unicode code points.</p>
+          <code><span class="kwd">var</span> <span class="var">scores</span> <span class="sym">=</span> [<span class="arg2">5</span>, <span class="arg2">1</span>, <span class="arg2">9</span>, <span class="arg2">4</span>, <span class="arg2">10</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(scores.<span class="key">sort</span>());</code><br/>
+          <p>Output:<br/>
+            <code>[1, 10, 4, 5, 9]</code>
+          </p>
+        </div>
+        <div id="array-toString" class="hidden">
+          <p>The toString() method returns a string representing the specified array and its elements.</p>
+          <code><span class="kwd">var</span> <span class="var">monthNames</span> <span class="sym">=</span> [<span class="str">'Jan'</span>, <span class="str">'Feb'</span>, <span class="str">'Mar'</span>, <span class="str">'Apr'</span>];</code><br/><br/>
+          <code>console.<span class="key">log</span>(monthNames.<span class="key">toString</span>());</code><br/>
+          <p>Output:<br/>
+            <code>Jan,Feb,Mar,Apr</code>
+          </p>
+        </div>
+      </div>         
+    </section><!-- end arrays -->
+    <section class="skills cheats-strings">
+      <div class="banner">
+        <h2>Stings</h2>
+      </div>
+      <div class="col-2 method">
+        <h3>Properties</h3>
+        <a onmouseover="displayMethod('string-length')" onmouseout="hideMethod('string-length')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length" target="_blank">.length</a>
+        <h3>Methods</h3>
+        <p>
+          <a onmouseover="displayMethod('string-charAt')" onmouseout="hideMethod('string-charAt')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt" target="_blank">.charAt()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-concat')" onmouseout="hideMethod('string-concat')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat" target="_blank">.concat()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-includes')" onmouseout="hideMethod('string-includes')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes" target="_blank">.includes()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-slice')" onmouseout="hideMethod('string-slice')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice" target="_blank">.slice()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-split')" onmouseout="hideMethod('string-split')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">.split()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-toLowerCase')" onmouseout="hideMethod('string-toLowerCase')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase" target="_blank">.toLowerCase()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-toUpperCase')" onmouseout="hideMethod('string-toUpperCase')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase" target="_blank">.toUpperCase()</a>
+        </p>
+        <p>
+          <a onmouseover="displayMethod('string-trim')" onmouseout="hideMethod('string-trim')" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim" target="_blank">.trim()</a>
+        </p>
+      </div>
+      <div id="strings" class="col-10 method-strings">
+        <div id="string-length" class="hidden example2">
+          <p>The length property represents the length of a string.</p>
+          <code><span class="kwd">var</span> <span class="var">example</span> <span class="sym">=</span> <span class="str">'This is an example'</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(example <span class="str">'has '</span><span class="sym"> + </span>example.<span class="key">length</span><span class="sym"> + </span><span class="str">' characters.'</span>);</code>
+          <p>Output:<br/>
+          <code>This is an example has 18 characters.</code>
+          </p>
+        </div>
+        <div id="string-charAt" class="hidden example2">
+          <p>The charAt() method returns the specified character from a string.</p>
+          <code><span class="kwd">var</span> <span class="var">anyString</span> <span class="sym">=</span> <span class="str">'Brave new world'</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(<span class="str">"The character at index 0   is '"</span><span class="sym"> + </span>anyString.<span class="key">charAt</span>(<span class="arg2">0</span>)<span class="sym">   + </span><span class="str">"'"</span>);</code><br/>
+          <code>console.<span class="key">log</span>(<span class="str">"The character at index 999 is '"</span><span class="sym"> + </span>anyString.<span class="key">charAt</span>(<span class="arg2">999</span>)<span class="sym"> + </span><span class="str">"'"</span>);</code>
+          <p>Output:<br/>
+            <code>The character at index 0   is 'B'</code><br/>
+            <code>The character at index 999 is ''</code>
+          </p>
+        </div>
+        <div id="string-concat" class="hidden example2">
+          <p>The concat() method combines the text of two or more strings and returns a new string.</p>
+          <code><span class="kwd">var</span> <span class="var">hello</span> <span class="sym">=</span> <span class="str">'Hello, '</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(hello.<span class="key">concat</span>(<span class="str">'Kevin'</span>, <span class="str">' have a nice day'</span>));</code>
+          <p>Output:<br/>
+            <code>Hello, Kevin have a nice day.</code>
+          </p>
+        </div>
+        <div id="string-includes" class="hidden example2">
+          <p>The includes() method determines whether one string may be found within another string, returning true or false as appropriate.</p>
+          <code><span class="kwd">var</span> <span class="var">str</span> <span class="sym">=</span> <span class="str">'To be, or not to be, that is the question.'</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(str.<span class="key">includes</span>(<span class="str">'To be'</span>));</code><br/>
+          <code>console.<span class="key">log</span>(str.<span class="key">includes</span>(<span class="str">'nonexistent'</span>));</code>
+          <p>Output:<br/>
+            <code>True</code><br/>
+            <code>False</code>
+          </p>
+        </div>
+        <div id="string-slice" class="hidden example2">
+          <p>The slice() method extracts a section of a string and returns a new string.</p>
+          <code><span class="kwd">var</span> <span class="var">str</span> <span class="sym">=</span> <span class="str">'The morning is upon us.'</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(str.<span class="key">slice</span>(<span class="arg2">4</span>, <span class="arg2">-2</span>));</code><br/>
+         <code>console.<span class="key">log</span>(str.<span class="key">slice</span>(<span class="arg2">0</span>, <span class="arg2">-1</span>));</code>
+         <p>Output:<br/>
+            <code>morning is upon u</code><br/>
+            <code>The morning is upon us</code>
+          </p>
+        </div>
+        <div id="string-split" class="hidden example2">
+          <p>The split() method splits a String object into an array of strings by separating the string into substrings.</p>
+          <code><span class="kwd">var</span> <span class="var">myString</span> <span class="sym">=</span> <span class="str">'Hello World!'</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(myString.<span class="key">split</span>(<span class="str">''</span>));</code>
+           <p>Output:<br/>
+            <code>['H','e','l','l','o',' ','W','o','r','l','d','!']</code>
+          </p>
+          <p>Reversing a String using split()</p>
+          <code>console.<span class="key">log</span>(myString.<span class="key">split</span>(<span class="str">''</span>).<span class="key">reverse</span>().<span class="key">join</span>(<span class="str">''</span>));</code>
+          <p>Output:<br/>
+            <code>!dlroW olleH</code>
+          </p>
+        </div>
+        <div id="string-toLowerCase" class="hidden example2">
+          <p>The toLowerCase() method returns the calling string value converted to lowercase.</p>
+          <code>console.<span class="key">log</span>(<span class="str">'ALPHABET'</span>.<span class="key">toLowerCase</span>());</code>
+          <p>Output:<br/>
+            <code>alphabet</code>
+          </p>
+        </div>
+        <div id="string-toUpperCase" class="hidden example2">
+          <p>The toUpperCase() method returns the calling string value converted to uppercase.</p>
+          <code>console.<span class="key">log</span>(<span class="str">'alphabet'</span>.<span class="key">toUpperCase</span>());</code>
+          <p>Output:<br/>
+            <code>ALPHABET</code>
+          </p>
+        </div>
+        <div id="string-trim" class="hidden example2">
+          <p>The trim() method removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).</p>
+          <code><span class="kwd">var</span> <span class="var">orig</span> <span class="sym">=</span> <span class="str">'   Hello  World   '</span>;</code><br/><br/>
+          <code>console.<span class="key">log</span>(orig.<span class="key">trim</span>());</code>
+          <p>Output:<br/>
+            <code>Hello World</code>
+          </p>
+        </div>
+      </div>         
+    </section><!-- end strings -->
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+    <script src="../js/cheat-sheet.js"></script>
+  </body>
+</html>
