@@ -26,10 +26,20 @@
 .center {
   margin: 0 auto;
 }
+.skills a p {
+  color: #000000;
+}
 .skills a:visited p {
   color: #000000;
 }
 .skills {
   margin-top: -50px;
+  margin-bottom: 50px;
+}
+.skills.cheats {
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+.button {
   margin-bottom: 50px;
 }
