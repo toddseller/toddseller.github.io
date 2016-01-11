@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Regular Expressions</title>
+    <!-- load stylesheets -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <!-- load Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html"><img class="center profile-pict" src="../imgs/my_pict.jpg" alt="An Image of Todd Seller"></a>
+        <div class="nav-left">
+          <ul>
+            <li><a href="../index.html">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../contact/index.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text blog-title">
+        <h1>Regular Expressions</h1>
+        <h2>A Newbies Guide to Development</h2>
+      </div>
+    </section>
+    <section class="post">
+      <div class="col-8 post-text">
+        <h3>January 10, 2015</h3>
+        <p>
+          Entering into anything new can be overwhelming and intimidating. I should know, I have chosen to enter the field of web development and I'm attending Dev Bootcamp. Dev Bootcamp (DBC) is a development bootcamp geared at taking you from newbie to a "world class beginner" in 18 weeks. It is going to be one of the most challenging experiences of my life. This blog series is designed to be an introduction to the world of development for the novice developer by a novice developer. By the end of this series I hope that you have had an opportunity to grow as much as I have. 
+        </p>
+        <h4>What are Regular Expressions</h4>
+        <blockquote>A journey of a thousand miles starts under one's feet.</blockquote>        
+        <cite>&ndash; Laozi, Tao Te Ching</cite>
+        <p>
+          And so does our journey into regular expressions. I will be completely honest, this is not a how to tutorial into the use of regular expressions. There is just too much to cover and, let's face it, I'm just learning. This is more a guide into what regular expressions are and what they can do for your code.
+        </p>
+        <p>
+          Stephen Kleene, a mathematician, originated regular expressions in 1956. However, it was not until 1968, when Ken Thompson built regular expressions into the QED text editor as a way to match patterns in text files, that we started to see regular expressions in use. Basically, regular expressions, or more commonly referred to as regex, are a sequence of characters that define a search pattern. Regex processors are built into many search engines, word processors, and programming languages, including JavaScript and Ruby. 
+        </p>
+        <h4>So How Do Regular Expressions Work?</h4>
+        <blockquote class="kevin">The challenge of regular expressions is both matching what you want<br/><span class="indent">and only what you want.</span></blockquote>
+        <cite>&ndash; Kevin Skoglund, Lynda.com</cite>
+        <p>
+          All regex statements begin with a <code>/</code> and end with a <code>/</code>. <code>/apples/</code> is a regex statement that uses character literals to find a match, and are case sensitive. Our example <code>/apples/</code> would find a match for <code><span class="yellow">apples</span></code> and <code><span class="yellow">apples</span>auce</code>, but not find a match for <code>Apples</code>.
+        </p>
+        <p>
+          Regex also uses metacharacters, which include, <code>. [] ^ $ () \ * + ? {} |</code>.
+          <ul>
+            <li><code>.</code> Is often referred to as a wild card and will return any single character.</li>
+            <li><code>[ ]</code> Matches any character or range of characters within the brackets.</li>
+            <li><code>[^ ]</code> The <code>^</code> has two meanings. First, when used at the beginning of a bracket statement, it matches any character or range of characters not found within the brackets.</li>
+            <li><code>^</code> Second, only returns a match if the regex is at the beginning of a string or line.</li>
+            <li><code>$</code> Matches any regex at the end of a string or line.</li>
+            <li><code>( )</code> Matches the group of characters within the <code>( )</code>.</li>
+            <li><code>\</code> Is used to cancel out a metacharacter and returns the literal character.</li>
+            <li><code>*</code> Matches the preceding element zero or more times.</li>
+            <li><code>+</code> Matches the preceding element one or more times.</li>
+            <li><code>?</code> Matches the preceding element zero or one time.</li>
+            <li><code>{x}</code> Matches the preceding element x-times.</li>
+            <li><code>{x,y}</code> Matches the preceding element at least x-times but no more than y-times.</li> 
+            <li><code>|</code> Matches the expression before or the expression after the operator.</li>
+          </ul>
+          An example of a complex regex <code>/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/</code> could be used within JavaScript to validate an email address.
+        </p>
+        <p>
+          Regular expressions can add a whole new dimension to your code and is a complex subject, for additional information visit <a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">Wikipedia</a>. An additional resource is an excellent <a href="http://www.lynda.com/Regular-Expressions-tutorials/Using-Regular-Expressions/85870-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aregular+expressions%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2" target="_blank">tutorial</a> by Kevin Skoglund on Lynda.com.
+        </p>
+      </div>
+      
+      <div class="col-4 post-links">
+        <ul>
+          <li class="first-post"><a href="git.html">The Importance of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Concepts</a></li>
+          <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li><a href="enumerable-methods.html">Enumerable Methods</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes</a></li>
+          <li><a href="javascript.html">Ruby vs JavaScript Iteration</a></li>
+          <li><a class="active" href="#">Regular Expressions</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="clearfix">
+      <div class="foot">
+        <div class="col-4 icon">
+          <a href="mailto:me@toddseller.com"><img src="../imgs/email.svg" alt="Icon of an envelope">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Me</a>
+        </div><!-- end icon -->
+        <div class="col-4 copyright">
+          <p>&copy; 2015 Todd Seller</p>
+        </div><!-- end copyright -->
+        <div class="col-4 social">
+          <ul>
+            <li><a href="https://www.facebook.com/todd.seller" target="_blank"><img src="../imgs/facebook.svg" alt="Facebook icon"></a></li>
+            <li><a href="https://twitter.com/onyxwear" target="_blank"><img src="../imgs/twitter.svg" alt="Twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/onyxwear/" target="_blank"><img src="../imgs/instagram.svg" alt="Instagram icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/todd-seller-59a3a6108" target="_blank"><img src="../imgs/linkedin.svg" alt="LinkedIn icon"></a></li>
+            <li><a href="https://github.com/toddseller" target="_blank"><img src="../imgs/github.svg" alt="GitHub icon"></a></li>
+          </ul>
+        </div><!-- end social -->
+      </div>
+    </footer>
+  </body>
+</html>
